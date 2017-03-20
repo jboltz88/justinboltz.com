@@ -35,6 +35,9 @@ gem 'figaro'
 
 gem 'pg'
 
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
