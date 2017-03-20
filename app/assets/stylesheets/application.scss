@@ -40,97 +40,23 @@
    background-position: center center;
    background-size: cover;
    background-color: rgb(186, 182, 174);
-   font-family: 'Open Sans';
-   color: white;
+   font-family: 'Open Sans', sans-serif;
    min-height: 100%;
  }
 
+ .navbar-brand {
+   font-family: 'Cinzel Decorative', serif;
+   font-weight: 900;
+ }
+
+ .navbar-button {
+  font-size: 0.725rem;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+ }
+
  .title {
-   font-family: 'Bree Serif', serif;
-   text-align: center;
- }
-
- .navbar {
-   position: relative;
-   padding: 0.5rem;
- /*  background-color: rgba(0,100,155,.5);*/
-   z-index: 1;
-   background-image: linear-gradient(90deg, rgba(0,100,155,.9), rgba(0,100,155,.5) 80%);
- }
-
- .navbar .home {
-   position: relative;
-   left: 2rem;
-   cursor: pointer;
-   color: white;
-   text-shadow: 1px 1px 2px black;
-   font-family: "Bree Serif", serif;
- }
-
- .navbar .links-container {
-   display: table;
-   position: absolute;
-   top: 1rem;
-   right: 0;
-   color: white;
-   text-decoration: none;
- }
-
- .links-container .navbar-link {
-   display: inline;
-   position: relative;
-   height: 100%;
-   padding-left: 1rem;
-   padding-right: 1rem;
-   vertical-align: middle;
-   color: white;
-   font-size: 0.625rem;
-   letter-spacing: 0.05rem;
-   font-weight: 700;
-   text-transform: uppercase;
-   text-decoration: none;
-   cursor: pointer;
- }
-
- .links-container .navbar-link:hover {
-   color: rgb(0, 0, 0);
- }
-
- .container {
-   margin: 0 auto;
-   max-width: 64rem;
- }
-
- .container.narrow {
-   max-width: 56rem;
- }
-
- @media (min-width: 640px) {
-   html { font-size: 112%; }
-
-   .column {
-     float: left;
-     padding-left: 1rem;
-     padding-right: 1rem;
-   }
-
-   .column.full { width: 100%; }
-   .column.two-thirds { width: 66.7%; }
-   .column.half { width: 50%; }
-   .column.third { width: 33.3%; }
-   .column.fourth { width: 25%; }
-   .column.flow-opposite { float: right; }
- }
-
- @media (min-width: 1024px) {
-   html { font-size: 120% }
- }
-
- .clearfix::before,
- .clearfix::after {
-   content: " ";
-   display: table;
- }
- .clearfix::after {
-   clear: both;
+   font-family: 'Bitter', serif;
+   color: #222222;
  }

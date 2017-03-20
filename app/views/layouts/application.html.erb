@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Justin Boltz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Bitter|Cinzel+Decorative" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
 
@@ -10,31 +12,53 @@
   </head>
 
   <body>
-    <div class="container">
-      <h4 class="nav nav-tabs">
-        <%= link_to "Justin Boltz", root_path, :class => 'navbar-link' %>
-      </h4>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Justin Boltz", root_path, :class => 'navbar-brand' %>
+        </div>
 
-      <div class="flash">
-        <% if flash[:notice] %>
-          <div class="alert alert-success">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <%= flash[:notice] %>
-          </div>
-        <% elsif flash.now[:alert] %>
-          <div class="alert alert-danger">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <%= flash.now[:alert] %>
-          </div>
-        <% elsif flash[:alert] %>
-          <div class="alert alert-warning">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <%= flash[:alert] %>
-          </div>
-        <% end %>
-      </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <li><%= link_to "Projects", projects_path, :class => 'navbar-button' %></li>
+              <li><%= link_to "Blog", posts_path, :class => 'navbar-button' %></li>
+              <li><%= link_to "Resumé", resume_path, :class => 'navbar-button' %></li>
+              <li><%= link_to "Contact", contact_path, :class => 'navbar-button' %></li>
+              <li><%= link_to "About", about_path, :class => 'navbar-button' %></li>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
-      <%= yield %>
+    <div class="flash">
+      <% if flash[:notice] %>
+        <div class="alert alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <%= flash[:notice] %>
+        </div>
+      <% elsif flash.now[:alert] %>
+        <div class="alert alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <%= flash.now[:alert] %>
+        </div>
+      <% elsif flash[:alert] %>
+        <div class="alert alert-warning">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
     </div>
+
+    <%= yield %>
   </body>
 </html>
