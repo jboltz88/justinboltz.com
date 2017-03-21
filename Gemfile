@@ -38,6 +38,8 @@ gem 'pg'
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'devise'
+
+gem 'redcarpet'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
