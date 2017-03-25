@@ -1,2 +1,16 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<div class="container">
+  <h1 class="title">My Blog Posts</h1>
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <% @posts.each do |post| %>
+            <h4 class="span4">
+              <%= link_to post.title, post, :class=>"span4" %>
+            </h4>
+            <small>
+              <%= post.date %>
+            </small>
+      <% end %>
+    </div>
+  </div>
+</div>

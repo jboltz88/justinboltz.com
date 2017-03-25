@@ -46,7 +46,6 @@
 
  .navbar-brand {
    font-family: 'Cinzel Decorative', serif;
-   font-weight: 900;
  }
 
  .navbar-button {
@@ -59,4 +58,10 @@
  .title {
    font-family: 'Bitter', serif;
    color: #222222;
+ }
+
+ .container .post {
+   background-color: #d3d1cd;
+   padding: .5rem 2rem .5rem 2rem;
+   margin-bottom: 1rem;
  }
