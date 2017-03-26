@@ -1,2 +1,12 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<div class="container">
+  <div class="post">
+    <h2 class="title">
+      <%= @project.title %>
+    </h2>
+    <p> <%= @project.url %></p>
+    <br>
+    <p>
+      <%= markdown(@project.body) %>
+    </p>
+  </div>
+</div>
