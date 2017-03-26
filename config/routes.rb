@@ -2,13 +2,13 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :projects
+  resources :projects, only: [:index, :show]
 
-  resources :posts
+  resources :posts, only: [:index, :show]
 
-  resources :posts, only: [] do
-    resources :comments, only: [:create, :destroy]
-  end
+  # resources :posts, only: [] do
+  #   resources :comments, only: [:create, :destroy]
+  # end
 
   match '/contact', to: 'contact#new', via: 'get'
   resources :contact, only: [:new, :create]

@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  has_many :comments
+  # has_many :comments
 
   default_scope { order('date DESC') }
 
