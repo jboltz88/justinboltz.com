@@ -40,6 +40,8 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
 gem 'redcarpet'
+
+gem 'paperclip'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

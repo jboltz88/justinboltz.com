@@ -1,9 +1,9 @@
 <div class="container">
-  <h1 class="title" align="center">My Blog Posts</h1>
+  <h1 class="title" align="center">My Thoughts</h1>
   <br>
   <div class="row">
     <% @posts.each do |post| %>
-      <div class="col-md-6" align="center" style="padding: 0rem 5rem 1rem 5rem;">
+      <div class="col-md-6" align="center" style="padding: 0rem 3rem 1rem 3rem;">
         <div class="preview">
           <h3 align="left">
             <%= link_to post.title, post, :class=>'post-link'%>

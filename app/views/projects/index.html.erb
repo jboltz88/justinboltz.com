@@ -1,18 +1,21 @@
 <div class="container">
-  <h1 class="title" align="center">My Projects</h1>
+  <h1 class="title" align="center">My Work</h1>
   <br>
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-md-6" align="center" style="padding: 0rem 5rem 1rem 5rem;">
-        <div class="preview">
+      <div class="col-md-6" align="center" style="padding: 0rem 3rem 1rem 3rem;">
+        <div class="preview" style="min-height: 20rem;">
           <h2 align="left">
             <%= link_to project.title, project, :class=>'post-link'%>
           </h2>
           <h5 align="left" style="min-height: 4rem;">
             <%= project.description %>
           </h5>
+          <div style="min-height: 5rem;">
+            <%= link_to image_tag(project.screenshot.url(:thumb), :class=>"img-responsive"), project %>
+          </div><br><br>
           <h4 align="left">
-            Demo: <%= link_to project.url, "http://#{project.url}" %>
+            Demo: <%= link_to project.url, "http://#{project.url}", target: :_blank %>
           </h4>
         </div>
       </div>
