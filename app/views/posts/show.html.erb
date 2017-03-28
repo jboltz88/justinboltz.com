@@ -5,6 +5,9 @@
     </h2>
     <p> <%= getDate %></p>
     <br>
+    <div align="center">
+      <%= image_tag @post.image.url(:large), :class=>"img-responsive" %>
+    </div>
     <p>
       <%= markdown(@post.body) %>
     </p>

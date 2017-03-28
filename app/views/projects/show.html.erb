@@ -3,7 +3,7 @@
     <h2 class="title">
       <%= @project.title %>
     </h2>
-    <p> <%= link_to @project.url, "http://#{@project.url}", target: :_blank %></p>
+    <h4> <%= link_to @project.url, "http://#{@project.url}", target: :_blank %></h4>
     <br>
     <div align="center">
       <%= image_tag @project.screenshot.url(:large), :class=>"img-responsive" %>
