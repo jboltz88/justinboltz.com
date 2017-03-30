@@ -43,6 +43,10 @@
    min-height: 100%;
  }
 
+ .columns {
+   column-count: 2;
+ }
+
  .navbar-inverse {
    border-color: transparent;
  }
@@ -156,4 +160,13 @@
    color: white;
    font-size: 16px;
    padding: 16px 32px;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ th, td {
+     text-align: left;
+     padding: 8px;
  }

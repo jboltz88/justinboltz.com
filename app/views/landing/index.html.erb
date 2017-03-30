@@ -8,19 +8,24 @@
   </div>
 </div>
 <div class="container preview">
-  <h1 class="title">My Work</h1>
+  <h1 class="title"><%= link_to "My Work", projects_path, :style=>"color: white" %></h1>
   <% @projects.each do |project| %>
     <div class="col-md-4">
-      <h2 align="left">
+      <h2 align="center">
         <%= link_to project.title, project, :class=>'post-link'%>
       </h2>
-      <%= link_to image_tag(project.screenshot.url(:thumb), :class=>"img-responsive"), project %>
+      <h5 align="center">
+        <%= project.description %>
+      </h5>
+      <div align="center">
+        <%= link_to image_tag(project.screenshot.url(:medium), :class=>"img-responsive"), project %>
+      </div>
     </div>
   <% end %>
 </div>
 <br>
 <div class="container preview">
-  <h1 class="title" align="right">My Thoughts</h1>
+  <h1 class="title" align="right"><%= link_to "My Thoughts", posts_path, :style=>"color: white" %></h1>
   <% @posts.each do |post| %>
     <div class="col-md-4" align="center">
       <h3 align="left">
