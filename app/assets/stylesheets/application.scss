@@ -29,7 +29,7 @@
    -webkit-background-size: cover;
    -moz-background-size: cover;
    background-size: cover;
-   background: url('design.jpg') no-repeat center center fixed;
+   background: image-url('design.jpg') no-repeat center center fixed;
    background-color: #222222;
  }
 
@@ -79,7 +79,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url("ProfPic.jpg");
+  background: image-url("ProfPic.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -91,7 +91,7 @@
  }
 
  .landing {
-   background: url('pillars.jpg');
+   background: image-url('pillars.jpg');
    background-size: cover;
    background-size: 100%;
  }
