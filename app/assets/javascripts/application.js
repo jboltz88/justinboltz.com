@@ -15,3 +15,20 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+var blocmetrics = {};
+blocmetrics.report = function(eventName) {
+   var event = {event: { name: eventName }};
+   var request = new XMLHttpRequest();
+   request.open("POST", "http://blocmetrics-boltz.herokuapp.com/api/v1/events", true);
+   request.setRequestHeader('Content-Type', 'application/json');
+   request.send(JSON.stringify(event));
+};
+
+$(document).ready(function() {
+  blocmetrics.report("page load");
+});
+
+$('.post-link').click(function() {
+  blocmetrics.report("post click")
+});
