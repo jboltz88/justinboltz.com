@@ -1,0 +1,11 @@
+GMAIL_DOMAIN: 'xxxxxxxx'
+GMAIL_USERNAME: 'xxxxxxxx'
+GMAIL_PASSWORD: 'xxxxxxxx'
+
+SENDGRID_USERNAME: xxxxxxxx
+SENDGRID_PASSWORD: xxxxxxxx
+
+AWS_ACCESS_KEY_ID: xxxxxxxx
+AWS_SECRET_ACCESS_KEY: xxxxxxxx
+AWS_S3_BUCKET: xxxxxxxx
+AWS_REGION: xxxxxxxx
