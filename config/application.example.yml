@@ -7,5 +7,5 @@ SENDGRID_PASSWORD: xxxxxxxx
 
 AWS_ACCESS_KEY_ID: xxxxxxxx
 AWS_SECRET_ACCESS_KEY: xxxxxxxx
-AWS_S3_BUCKET: xxxxxxxx
+S3_BUCKET_NAME: xxxxxxxx
 AWS_REGION: xxxxxxxx
