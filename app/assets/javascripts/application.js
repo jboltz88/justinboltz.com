@@ -25,10 +25,15 @@ blocmetrics.report = function(eventName) {
    request.send(JSON.stringify(event));
 };
 
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
   blocmetrics.report("page load");
-});
-
-$('.post-link').click(function() {
-  blocmetrics.report("post click")
+  $('.post-link').on('click', function() {
+    blocmetrics.report("post link")
+  });
+  $('.glyphicon-download-alt').on('click',function() {
+    blocmetrics.report("resume download")
+  });
+  $('.social').on('click',function() {
+    blocmetrics.report("social link")
+  });
 });
