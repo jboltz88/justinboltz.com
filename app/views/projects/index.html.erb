@@ -8,11 +8,11 @@
           <h2 align="left">
             <%= link_to project.title, project, :class=>'post-link'%>
           </h2>
-          <h5 align="left" style="min-height: 4rem;">
+          <h5 align="left" style="min-height: 5rem;">
             <%= project.description %>
           </h5>
           <div style="min-height: 5rem;">
-            <%= link_to image_tag(project.screenshot.url(:thumb), :class=>"img-responsive"), project %>
+            <%= link_to image_tag(project.screenshot.url(:medium), :class=>"img-responsive image-clip"), project %>
           </div><br><br>
           <h4 align="left">
             Demo: <%= link_to project.url, "http://#{project.url}", target: :_blank %>
