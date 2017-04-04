@@ -7,10 +7,10 @@ class ContactController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.valid?
       ContactMailer.new_contact(@contact).deliver
-      flash.now[:notice] = "Thank you for your message. I will get back to you soon!"
+      flash[:notice] = "Thank you for your message. I will get back to you soon!"
       redirect_to :root
     else
-      flash.now[:alert] = "Could not send message, please try again."
+      flash[:alert] = "Could not send message, please try again."
       render :new
     end
   end
