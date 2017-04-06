@@ -15,7 +15,8 @@
             <%= link_to image_tag(project.screenshot.url(:medium), :class=>"img-responsive image-clip"), project %>
           </div><br><br>
           <h4 align="left">
-            Demo: <%= link_to project.url, "http://#{project.url}", target: :_blank %>
+            <%= link_to "View Demo", "http://#{project.url}", target: :_blank, :class=>"button" %>
+            <%= link_to "View Github", "https://#{project.github_url}", target: :_blank, :class=>"button" %>
           </h4>
         </div>
       </div>
