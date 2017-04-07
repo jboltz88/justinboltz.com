@@ -4,7 +4,7 @@
   <div class="row">
     <% @posts.each do |post| %>
       <div class="col-md-6" align="center" style="padding: 0rem 3rem 1rem 3rem;">
-        <div class="preview">
+        <div class="preview" style="min-height: 15rem;">
           <h3 align="left">
             <%= link_to post.title, post, :class=>'post-link'%>
           </h3>
