@@ -7,4 +7,6 @@ class Project < ApplicationRecord
   validates :github_url, length: { minimum: 2}, presence: true
   validates :description, length: { minimum: 4}, presence: true
   validates :body, length: { minimum: 20 }, presence: true
+
+  default_scope { order('updated_at DESC')}
 end
