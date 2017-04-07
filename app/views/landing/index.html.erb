@@ -10,11 +10,11 @@
 <div class="container preview">
   <h1 class="title"><%= link_to "My Work", projects_path, :style=>"color: white" %></h1>
   <% @projects.each do |project| %>
-    <div class="col-md-4">
+    <div class="col-md-4" style="margin-bottom: 3rem;">
       <h2 align="center">
         <%= link_to project.title, project, :class=>'post-link'%>
       </h2>
-      <h5 align="center" style="min-height: 5rem;">
+      <h5 align="center" style="min-height: 3rem;">
         <%= project.description %>
       </h5>
       <div align="center">
@@ -27,7 +27,7 @@
 <div class="container preview">
   <h1 class="title" align="right"><%= link_to "My Thoughts", posts_path, :style=>"color: white" %></h1>
   <% @posts.each do |post| %>
-    <div class="col-md-4" align="center">
+    <div class="col-md-4" style="margin-bottom: 3rem;">
       <h3 align="left">
         <%= link_to post.title, post, :class=>'post-link'%>
       </h3>
